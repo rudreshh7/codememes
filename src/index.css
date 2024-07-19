@@ -1,13 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-*{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box; 
-  /* we use border box because we dont want our explicit padding and margin are added on the top of 
-  defined height and width */
-
-}
-
