@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { auth } from "../config/firebase.js";
 
 const Navbar = () => {
   return (
@@ -17,7 +18,12 @@ const Navbar = () => {
         </li>
 
         <li>
-          <Link to="/profile">Profile</Link>
+          <Link to="/profile">
+            <div>
+              <p>{auth.currentUser?.displayName}</p>
+              <img src={auth.currentUser?.photoURL} />
+            </div>
+          </Link>
         </li>
       </ul>
     </nav>
