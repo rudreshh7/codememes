@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { auth } from "../config/firebase.js";
+import { auth } from "../lib/firebase.js";
 import { useAuthState } from "react-firebase-hooks/auth";
 const Navbar = () => {
   const [user] = useAuthState(auth);
